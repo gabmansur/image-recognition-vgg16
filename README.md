@@ -75,6 +75,7 @@ def upload_file():
    if request.method == 'POST':
       f = request.files['file']
       f.save("img.jpg")
+      label = img_preprocess("img.jpg")
       pred_1 = label[0][0][1]
       pred_1 = pred_1.replace("_", " ")
       pred_2 = label[0][1][1]
