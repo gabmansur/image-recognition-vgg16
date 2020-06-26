@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <meta charset=utf-8 />
+
+     <script src="{{ url_for('static', filename='upload.js') }}"></script>
+
+    <style>
+      article, aside, figure, footer, header, hgroup,
+      menu, nav, section { display: block; }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<center>
+
+    <div>
+        <h1>Image Recognition with VGG16</h1>
+    </div>
+
+<body>
+<br>
+<br>
+<form action = "http://127.0.0.1:8050/prediction" method = "POST"
+ enctype = "multipart/form-data">
+    <div>
+        <input type='file' name = 'file' onchange="readURL(this);" />
+    </div>
+    <br><br>
+        <img id="blah" src="#"/>
+    <br><br>
+    <div>
+         <input type = "submit" value="Predict!"/>
+    </div>
+</form>
+
+</center>
+</body>
+</html>
