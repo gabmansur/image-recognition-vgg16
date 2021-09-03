@@ -52,7 +52,7 @@ By the way, for this example, I am using Suzie as a model. Because look how cute
 
 <img src="/images/susu.jpeg" width="400">
 
-6. Now let's decode those predictions and make some sense out of it. This Keras functions gets the top 5 highest probabilities and give us the corresponding labels.
+6. Now let's decode those predictions and make some sense out of it. This Keras function gets the top 5 highest probabilities and give us the corresponding labels.
 
 ![](/images/label.PNG)
 
